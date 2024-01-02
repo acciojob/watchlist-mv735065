@@ -80,6 +80,9 @@ public class MovieRepository {
     }
 
     public String deleteDirectorByName(String director) {
+
+        if(!map.containsKey(director))  return "success";
+
         List<String> list=map.get(director);
 
         for(String movie : list){
