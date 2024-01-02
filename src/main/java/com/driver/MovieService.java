@@ -6,8 +6,8 @@ import java.util.List;
 
 public class MovieService {
 
-    @Autowired MovieRepository respObj;
-
+   // @Autowired MovieRepository respObj;
+   MovieRepository respObj=new MovieRepository();
     public String addMovie(Movie movie) {
 
         String res=respObj.addMovie(movie);

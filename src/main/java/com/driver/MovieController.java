@@ -17,8 +17,8 @@ import java.util.*;
 public class MovieController {
 
 
-    @Autowired MovieService serviceObj;
-
+   // @Autowired MovieService serviceObj;
+   MovieService serviceObj =new MovieService();
     @PostMapping("/add-movie")
     public ResponseEntity addMovie(@RequestBody Movie movie){
         String res=serviceObj.addMovie(movie);
